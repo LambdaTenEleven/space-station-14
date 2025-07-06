@@ -703,6 +703,24 @@
     currentLabel: reagent-name-tonic-water
   - type: Sealable
 
+- type: entity
+  parent: [DrinkBottleVisualsAll, DrinkBottlePlasticBaseFull]
+  id: DrinkZhivchikBottleFull
+  name: Zhivchik bottle
+  description: A fizzy bottle of Zhivchik, sweet apple soda that tastes like childhood.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Zhivchik
+          Quantity: 100
+  - type: Label
+    currentLabel: reagent-name-zhivchik
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/zhivchik_bottle.rsi
+  - type: Sealable
+
 # Small Bottles
 
 - type: entity

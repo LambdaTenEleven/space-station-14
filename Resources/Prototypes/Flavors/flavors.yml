@@ -1479,3 +1479,7 @@
   flavorType: Base
   description: flavor-base-trashy
 
+- type: flavor
+  id: zhivchikcomplex
+  flavorType: Complex
+  description: flavor-complex-zhivchik

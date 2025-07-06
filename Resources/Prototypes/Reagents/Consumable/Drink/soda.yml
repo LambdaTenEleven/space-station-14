@@ -240,6 +240,24 @@
   metamorphicChangeColor: false
 
 - type: reagent
+  id: Zhivchik
+  name: reagent-name-zhivchik
+  parent: BaseSoda
+  desc: reagent-desc-zhivchik
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: zhivchikcomplex
+  color: "#f7d702"
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 1
+        type: Remove
+
+- type: reagent
   id: Starkist
   name: reagent-name-starkist
   parent: BaseSoda
