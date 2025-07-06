@@ -42,3 +42,6 @@ reagent-desc-table-salt = Commonly known as salt, Sodium Chloride is often used 
 
 reagent-name-syrup = syrup
 reagent-desc-syrup = Delicious syrup made from tree sap, somehow stickier than glue.
+
+reagent-name-garlic-sauce = garlic sauce
+reagent-desc-garlic-sauce = Packs enough garlic to make vampires cry.

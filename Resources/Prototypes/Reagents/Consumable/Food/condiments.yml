@@ -187,3 +187,13 @@
     collection: FootstepSlime
     params:
       volume: 6
+
+- type: reagent
+  id: GarlicSauce
+  name: reagent-name-garlic-sauce
+  group: Foods
+  desc: reagent-desc-garlic-sauce
+  physicalDesc: reagent-physical-desc-saucey
+  flavor: garlic
+  color: white
+  recognizable: true

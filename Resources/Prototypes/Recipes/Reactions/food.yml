@@ -329,6 +329,20 @@
     Vinaigrette: 3
 
 - type: reaction
+  id: CookingGarlicSauce
+  reactants:
+    Allicin:
+      amount: 2
+    OilOlive:
+      amount: 5
+    JuiceLemon:
+      amount: 2
+    TableSalt:
+      amount: 1
+  products:
+    GarlicSauce: 10
+
+- type: reaction
   id: BananaBreakdown
   source: true
   requiredMixerCategories:
