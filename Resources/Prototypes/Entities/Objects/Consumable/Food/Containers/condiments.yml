@@ -160,6 +160,26 @@
 
 - type: entity
   parent: BaseFoodCondimentPacket
+  id: FoodCondimentPacketGarlicSauce
+  name: garlic sauce packet
+  description: A pungent packet of creamy garlic sauce.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: GarlicSauce
+          Quantity: 10
+  - type: Icon
+    state: packet-greygoo
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 2
+    fillBaseName: packet-trans-
+
+- type: entity
+  parent: BaseFoodCondimentPacket
   id: FoodCondimentPacketHorseradish
   name: horseradish sauce
   description: A packet of smelly horseradish sauce.
@@ -518,6 +538,32 @@
   - type: Tag
     tags:
       - BBQsauce
+
+- type: entity
+  parent: BaseFoodCondimentBottle
+  id: FoodCondimentBottleGarlicSauce
+  name: garlic sauce bottle
+  description: A bottle of creamy, pungent garlic sauce.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: GarlicSauce
+          Quantity: 30
+  - type: Sprite
+    layers:
+    - state: bottle-empty
+      map: ["enum.OpenableVisuals.Layer"]
+    - state: label-g
+    - state: bottle-alpha-6
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: true
+  - type: Icon
+    state: bottle-ketchup
+  - type: Tag
+    tags:
+    - GarlicSauce
 
 # Shakers
 

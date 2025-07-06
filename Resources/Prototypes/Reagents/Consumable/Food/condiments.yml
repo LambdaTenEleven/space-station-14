@@ -195,5 +195,5 @@
   desc: reagent-desc-garlic-sauce
   physicalDesc: reagent-physical-desc-saucey
   flavor: garlic
-  color: white
+  color: "#f7e7b2"
   recognizable: true
