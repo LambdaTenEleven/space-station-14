@@ -97,3 +97,13 @@
   cost: 2000
   category: cargoproduct-category-name-food
   group: market
+
+- type: cargoProduct
+  id: FoodZhivchik
+  icon:
+    sprite: Objects/Consumable/Drinks/zhivchik_bottle.rsi
+    state: icon
+  product: CrateDrinkZhivchikDelivery
+  cost: 1500
+  category: cargoproduct-category-name-food
+  group: market

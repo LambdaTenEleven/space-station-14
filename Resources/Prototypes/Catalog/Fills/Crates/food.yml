@@ -208,3 +208,14 @@
     contents:
     - id: FoodMealHappyHonkBigBite
       amount: 2
+
+- type: entity
+  id: CrateDrinkZhivchikDelivery
+  parent: CratePlastic
+  name: Zhivchik crate
+  description: A crate filled with refreshing Zhivchik bottles.
+  components:
+  - type: StorageFill
+    contents:
+    - id: DrinkZhivchikBottleFull
+      amount: 6
