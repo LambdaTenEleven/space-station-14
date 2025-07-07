@@ -161,7 +161,7 @@
 - type: entity
   parent: BaseFoodCondimentPacket
   id: FoodCondimentPacketGarlicSauce
-  name: garlic sauce packet
+  name: garlic sauce
   description: A pungent packet of creamy garlic sauce.
   components:
   - type: SolutionContainerManager

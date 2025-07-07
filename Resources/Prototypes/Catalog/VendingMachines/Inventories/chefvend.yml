@@ -10,6 +10,7 @@
     FoodCondimentBottleHotsauce: 1
     FoodCondimentBottleKetchup: 1
     FoodCondimentBottleBBQ: 1
+    FoodCondimentBottleGarlicSauce: 1
     FoodCondimentBottleVinegar: 2
     ReagentContainerOliveoil: 2
     ReagentContainerMayo: 1
@@ -25,4 +26,4 @@
     FoodBoxDonkpocket: 1
     FoodFrozenSandwich: 2
     FoodFrozenSandwichStrawberry: 2
-    
+
