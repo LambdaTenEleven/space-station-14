@@ -588,6 +588,9 @@
   id: Folder
 
 - type: Tag
+  id: FoodPlated
+
+- type: Tag
   id: FoodSnack
 
 - type: Tag

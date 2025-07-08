@@ -15,6 +15,19 @@
   - type: Sprite
     sprite: Objects/Consumable/Food/plates.rsi
     state: plate
+  - type: ContainerContainer
+    containers:
+      food_slot: !type:ContainerSlot { }
+  - type: ItemSlots
+  - type: FoodPlate
+    foodSlot:
+      ejectOnBreak: true
+      whitelist:
+        components:
+        - Food
+      blacklist:
+        tags:
+        - FoodPlated
   - type: Item
     shape:
     - 0,0,1,0
