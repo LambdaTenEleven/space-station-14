@@ -52,6 +52,14 @@ public sealed partial class FoodPlateSystem : EntitySystem
         if (TryComp(uid, out AppearanceComponent? appearance))
         {
             _appearance.SetData(uid, FoodPlateVisuals.FoodPresent, comp.FoodSlot.HasItem, appearance);
+
+            string prototype = string.Empty;
+            if (comp.FoodSlot.Item is { Valid: true } item)
+            {
+                prototype = MetaData(item).EntityPrototype?.ID ?? string.Empty;
+            }
+
+            _appearance.SetData(uid, FoodPlateVisuals.SpritePrototype, prototype, appearance);
         }
     }
 }

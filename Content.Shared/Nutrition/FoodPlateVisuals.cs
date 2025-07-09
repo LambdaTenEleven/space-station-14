@@ -6,4 +6,5 @@ namespace Content.Shared.Nutrition;
 public enum FoodPlateVisuals : byte
 {
     FoodPresent,
+    SpritePrototype,
 }

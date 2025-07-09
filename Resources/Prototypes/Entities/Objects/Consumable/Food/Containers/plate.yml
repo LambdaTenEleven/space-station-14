@@ -14,7 +14,11 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/plates.rsi
-    state: plate
+    layers:
+    - state: plate
+    - map: [ "enum.FoodPlateLayers.Food" ]
+      state: plate
+      visible: false
   - type: ContainerContainer
     containers:
       food_slot: !type:ContainerSlot { }
@@ -28,6 +32,13 @@
       blacklist:
         tags:
         - FoodPlated
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.FoodPlateVisuals.FoodPresent:
+        enum.FoodPlateLayers.Food:
+          True: { visible: true }
+          False: { visible: false }
   - type: Item
     shape:
     - 0,0,1,0
