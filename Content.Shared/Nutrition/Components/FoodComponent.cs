@@ -1,3 +1,4 @@
+using System.Numerics;
 using Content.Shared.Body.Components;
 using Content.Shared.FixedPoint;
 using Content.Shared.Nutrition.EntitySystems;
@@ -73,4 +74,10 @@ public sealed partial class FoodComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public bool RequireDead = true;
+
+    /// <summary>
+    /// Offset applied when this food is displayed on a plate.
+    /// </summary>
+    [DataField]
+    public Vector2 PlateOffset = Vector2.Zero;
 }

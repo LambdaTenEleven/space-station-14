@@ -1,4 +1,5 @@
-﻿using Content.Shared.Nutrition;
+﻿using System.Numerics;
+using Content.Shared.Nutrition;
 using Content.Shared.Nutrition.Components;
 using Robust.Client.GameObjects;
 
@@ -20,6 +21,10 @@ public sealed class FoodPlateVisualizerSystem : VisualizerSystem<FoodPlateCompon
             var texture = SpriteSystem.GetPrototypeIcon(proto).Default;
             SpriteSystem.LayerSetTexture((uid, args.Sprite), layer, texture);
         }
+
+        // If the sprite offset is set, apply it to the layer.
+        if (AppearanceSystem.TryGetData<Vector2>(uid, FoodPlateVisuals.SpriteOffset, out var offset, args.Component))
+            SpriteSystem.LayerSetOffset((uid, args.Sprite), layer, offset);
 
         var hasFood = AppearanceSystem.TryGetData<bool>(uid, FoodPlateVisuals.FoodPresent, out var present, args.Component) && present;
         SpriteSystem.LayerSetVisible((uid, args.Sprite), layer, hasFood);

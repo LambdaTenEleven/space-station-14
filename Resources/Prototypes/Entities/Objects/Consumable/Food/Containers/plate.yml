@@ -25,6 +25,8 @@
   - type: ItemSlots
   - type: FoodPlate
     foodSlot:
+      ejectSound: null
+      insertSound: null
       ejectOnBreak: true
       whitelist:
         components:

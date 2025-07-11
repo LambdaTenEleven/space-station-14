@@ -1956,6 +1956,8 @@
   id: FoodMeatCutletCooked
   description: A cooked meat cutlet. Needs some seasoning.
   components:
+  - type: Food
+    plateOffset: 0, -0.5
   - type: Tag
     tags:
     - Cooked

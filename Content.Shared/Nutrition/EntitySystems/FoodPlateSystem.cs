@@ -1,4 +1,5 @@
-﻿using Content.Shared.Containers.ItemSlots;
+﻿using System.Numerics;
+using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Nutrition.Components;
 using Robust.Shared.Containers;
 
@@ -54,12 +55,17 @@ public sealed partial class FoodPlateSystem : EntitySystem
             _appearance.SetData(uid, FoodPlateVisuals.FoodPresent, comp.FoodSlot.HasItem, appearance);
 
             string prototype = string.Empty;
+            Vector2 offset = Vector2.Zero;
             if (comp.FoodSlot.Item is { Valid: true } item)
             {
                 prototype = MetaData(item).EntityPrototype?.ID ?? string.Empty;
+
+                if (TryComp(item, out FoodComponent? food))
+                    offset = food.PlateOffset;
             }
 
             _appearance.SetData(uid, FoodPlateVisuals.SpritePrototype, prototype, appearance);
+            _appearance.SetData(uid, FoodPlateVisuals.SpriteOffset, offset, appearance);
         }
     }
 }

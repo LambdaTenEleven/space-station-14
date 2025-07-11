@@ -7,4 +7,5 @@ public enum FoodPlateVisuals : byte
 {
     FoodPresent,
     SpritePrototype,
+    SpriteOffset,
 }
